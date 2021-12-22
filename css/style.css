@@ -272,8 +272,8 @@ header a:hover {
   }
 
   .subtitle {
-    font-size: 65pt;
-    margin: 100px 0 20px 0;
+    font-size: 35pt;
+    margin: 75px 0 20px 0;
     font-weight: black;
   }
   header {
@@ -314,7 +314,7 @@ header a:hover {
     font-size: 40pt;
     margin: 0px;
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     right: 20px;
   }
   .hoverText h1 {
@@ -322,7 +322,7 @@ header a:hover {
   }
   .hoverText .subHoverText {
     display: block;
-    font-size: 20pt;
+    font-size: 15pt;
   }
   .laptopHover {
     display: none !important;
@@ -336,26 +336,29 @@ header a:hover {
   }
   .featureCard {
     width: 70%;
-    margin: 50px auto;
+    margin: 35px auto;
   }
   .featureCardInner {
     height: auto;
     padding-bottom: 20px;
+    padding-top: 10px;
   }
   .featureCard .cardImage {
-    height: 300px;
+    height: 150px;
+    margin-top: 0px;
   }
   .featureCard .cardImage img {
-    width: auto;
-    height: 100%;
+    /* width: auto;
+    height: 100%; */
+    width: 100%;
   }
   .featureCard .cardTitle {
     margin-top: 10px;
-    font-size: 50pt;
+    font-size: 25pt;
   }
   .featureCard h5 {
-    font-size: 35pt;
-    margin-top: 50px;
+    font-size: 20pt;
+    margin-top: 20px;
   }
   .featureCardInner:hover .cardImage {
     filter: none;
@@ -364,54 +367,64 @@ header a:hover {
     background-color: #f6f6f6;
   }
 
-  .content .image {
-    margin-top: 10px;
-  }
-  .carouselContainer {
-    flex-direction: column;
-  }
-  .descField {
-    text-align: center;
-    font-size: 45pt;
-    display: block;
-  }
   .phoneInvisible {
     display: none;
   }
   .laptopInvisible {
     display: inline-block !important;
   }
+
+  .content .image {
+    margin-top: 10px;
+  }
+  .carouselContainer {
+    flex-direction: column;
+  }
+  .carDescription {
+    width: 100%;
+  }
+  .descrptionOption {
+    margin-bottom: 10px;
+  }
+  .descField {
+    text-align: center;
+    font-size: 30pt;
+    display: block;
+    width: 100%;
+  }
   .descIcon {
-    width: 100px !important;
+    width: 50px !important;
     display: inline-block;
     margin-right: 20px;
   }
   .descLabel {
     color: #929292;
     display: block;
-    font-size: 28pt;
+    font-size: 17pt;
   }
   .descValue {
-    font-size: 31pt;
+    font-size: 20pt;
   }
   .priceField {
     display: block;
-    font-size: 35pt;
+    font-size: 25pt;
     text-align: right;
   }
   .greenTextSpan {
-    font-size: 37pt;
+    font-size: 28pt;
     font-weight: 700;
     color: green;
   }
   .depositField {
     display: block;
-    font-size: 22pt;
+    font-size: 20pt;
     text-align: right;
     color: #757575;
     /* color: #929292; */
   }
-
+  .testimony-29101 .text {
+    padding: 1rem;
+  }
   .owl-nav .owl-dots {
     display: block !important;
   }
@@ -421,10 +434,12 @@ header a:hover {
     height: 500px;
   }
   .icon-keyboard_arrow_left {
+    background-image: url("../images/icon/arrowPrevv2Trans.png");
     width: 100px;
     height: 100px;
   }
   .icon-keyboard_arrow_right {
+    background-image: url("../images/icon/arrowNextv2Transp.png");
     width: 100px;
     height: 100px;
   }
@@ -446,18 +461,20 @@ header a:hover {
     -moz-column-count: 1;
     column-count: 1;
 
+    padding-left: 0;
+
     text-align: center;
-    font-size: 36pt;
+    font-size: 20pt;
     list-style-type: circle;
   }
   .offerList li {
-    margin-top: 10px;
+    margin-top: 15px;
     background: white;
     padding: 2px;
   }
 
   .contactInfo a {
-    font-size: 35pt;
+    font-size: 28pt;
     text-align: center;
     display: inline-block;
   }
