@@ -1,0 +1,504 @@
+html {
+  scroll-behavior: smooth;
+}
+.subtitle {
+  color: #d10000;
+  text-align: center;
+  font-size: 40pt;
+  margin: 75px 0 20px 0;
+  font-weight: 600;
+}
+.laptopInvisible {
+  display: none;
+}
+
+/* Header */
+header {
+  height: 120px;
+  padding: 10px 30px 10px 4px;
+  background-color: white;
+  z-index: 99;
+}
+header img {
+  float: left;
+}
+header ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+  height: 100%;
+}
+header a {
+  color: black;
+  text-decoration: none;
+  font-size: 20pt;
+  font-weight: bold;
+}
+header a:hover {
+  color: #d10000;
+}
+.upperHeader {
+  display: none;
+}
+
+/* Parallax */
+.parallax {
+  background-image: url("../images/onroad.webp");
+
+  min-height: 600px;
+
+  background-position-x: 10px 10px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+
+  position: relative;
+}
+.redText {
+  color: #d10000;
+}
+.onParallaxText {
+  text-align: right;
+  position: absolute;
+  right: 18%;
+  top: 30%;
+
+  font-weight: black;
+}
+.hoverText h1 {
+  font-size: 30pt;
+}
+.hoverText .subHoverText {
+  font-size: 17pt;
+}
+.hoverText {
+  position: absolute;
+  width: 100%;
+  margin-top: 100px;
+  margin-left: -100px;
+  color: white;
+  text-align: right;
+}
+.phoneHover {
+  display: none !important;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+.featureCard {
+  width: 20%;
+}
+.featureCardInner {
+  background-color: #f6f6f6;
+  height: 500px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+.featureCard .cardImage {
+  width: 60%;
+  display: block;
+  margin: 20px auto;
+  transition: all 0.5s linear;
+}
+.featureCard:hover .cardImage {
+  /* filter: invert(10%) sepia(79%) saturate(3396%) hue-rotate(356deg)
+    brightness(151%) contrast(135%); */
+  filter: invert(8%) sepia(99%) saturate(6500%) hue-rotate(7deg)
+    brightness(101%) contrast(113%);
+}
+.featureCardInner:hover {
+  background-color: #d4d4d4;
+}
+.featureCard .cardTitle {
+  font-size: 28pt;
+  font-weight: bold;
+  margin: 10px 5px;
+}
+.featureCard h5 {
+  font-size: 20pt;
+  margin: 0 5px;
+}
+
+/* Carousel */
+.carouselContainer {
+  display: flex;
+}
+.owl-nav {
+  display: block !important;
+}
+.owl-prev,
+.owl-next {
+  width: 50px;
+  height: 50px;
+  z-index: 99;
+}
+.icon-keyboard_arrow_left {
+  background-image: url(../images/icon/arrowPrevv2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.icon-keyboard_arrow_right {
+  background-image: url(../images/icon/arrowNextv2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+/* Description */
+.carDescription {
+  margin-right: 50px;
+}
+.descField {
+  font-size: 24pt;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.tableDesc {
+  display: inline-block;
+}
+.descIcon {
+  width: 52px !important;
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+.descLabel {
+  color: #757575;
+  /* color: #929292; */
+  display: block;
+  font-size: 14pt;
+}
+.descValue {
+  font-size: 16pt;
+}
+.priceField {
+  display: block;
+  font-size: 20pt;
+  text-align: right;
+}
+.greenTextSpan {
+  font-size: 22pt;
+  font-weight: 700;
+  color: green;
+}
+.depositField {
+  display: block;
+  font-size: 12pt;
+  text-align: right;
+  color: #757575;
+  /* color: #929292; */
+}
+
+/* Offer */
+.offerList ul {
+  list-style: none;
+
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
+.offerList li {
+  margin-top: 5px;
+  background: #fafafa;
+  border-radius: 4%;
+  padding: 2px;
+}
+
+/* Contacts */
+.contactsList {
+  display: inline-block;
+  background-color: #f6f6f6;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+}
+.contactInfo {
+  color: rgb(102, 102, 102);
+  /* color: #d4d4d4; */
+  font-weight: 500;
+  font-size: 20pt;
+  display: inline-block;
+}
+.contactInfo:hover {
+  color: black;
+}
+.contactInfo a {
+  text-decoration: none;
+  color: rgb(102, 102, 102);
+  font-weight: 500;
+  font-size: 20pt;
+}
+.contactInfo:hover a {
+  color: black;
+}
+.contactsList img {
+  margin-right: 10px;
+}
+.contactOption {
+  /* display: flex; */
+  align-items: center;
+}
+
+/* Adaptive */
+@media screen and (max-device-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  .subtitle {
+    font-size: 65pt;
+    margin: 100px 0 20px 0;
+    font-weight: black;
+  }
+  header {
+    position: relative;
+    top: 0px;
+    height: auto;
+  }
+  header a {
+    font-size: 24pt;
+  }
+  header img {
+    width: 235px;
+  }
+  header ul {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .upperHeader {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .parallax {
+    background-image: url(../images/onroadvertical.webp);
+
+    width: 100%;
+    background-attachment: local;
+    position: relative;
+  }
+  .onParallaxText {
+    right: 14%;
+    top: 1%;
+  }
+  .hoverText {
+    display: block;
+    font-size: 40pt;
+    margin: 0px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  .hoverText h1 {
+    font-size: 32pt;
+  }
+  .hoverText .subHoverText {
+    display: block;
+    font-size: 20pt;
+  }
+  .laptopHover {
+    display: none !important;
+  }
+  .phoneHover {
+    display: inline-block !important;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+  .featureCard {
+    width: 70%;
+    margin: 50px auto;
+  }
+  .featureCardInner {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .featureCard .cardImage {
+    height: 300px;
+  }
+  .featureCard .cardImage img {
+    width: auto;
+    height: 100%;
+  }
+  .featureCard .cardTitle {
+    margin-top: 10px;
+    font-size: 50pt;
+  }
+  .featureCard h5 {
+    font-size: 35pt;
+    margin-top: 50px;
+  }
+  .featureCardInner:hover .cardImage {
+    filter: none;
+  }
+  .featureCardInner:hover {
+    background-color: #f6f6f6;
+  }
+
+  .content .image {
+    margin-top: 10px;
+  }
+  .carouselContainer {
+    flex-direction: column;
+  }
+  .descField {
+    text-align: center;
+    font-size: 45pt;
+    display: block;
+  }
+  .phoneInvisible {
+    display: none;
+  }
+  .laptopInvisible {
+    display: inline-block !important;
+  }
+  .descIcon {
+    width: 100px !important;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .descLabel {
+    color: #929292;
+    display: block;
+    font-size: 28pt;
+  }
+  .descValue {
+    font-size: 31pt;
+  }
+  .priceField {
+    display: block;
+    font-size: 35pt;
+    text-align: right;
+  }
+  .greenTextSpan {
+    font-size: 37pt;
+    font-weight: 700;
+    color: green;
+  }
+  .depositField {
+    display: block;
+    font-size: 22pt;
+    text-align: right;
+    color: #757575;
+    /* color: #929292; */
+  }
+
+  .owl-nav .owl-dots {
+    display: block !important;
+  }
+  .owl-prev,
+  .owl-next {
+    width: 100px;
+    height: 500px;
+  }
+  .icon-keyboard_arrow_left {
+    width: 100px;
+    height: 100px;
+  }
+  .icon-keyboard_arrow_right {
+    width: 100px;
+    height: 100px;
+  }
+  .thumbnail {
+    display: none;
+  }
+
+  .descrptionOption:nth-child(2) img {
+    float: right;
+    margin-right: 0 !important;
+    margin-left: 20px;
+  }
+  .descrptionOption:nth-child(2) {
+    text-align: right;
+  }
+
+  .offerList ul {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+
+    text-align: center;
+    font-size: 36pt;
+    list-style-type: circle;
+  }
+  .offerList li {
+    margin-top: 10px;
+    background: white;
+    padding: 2px;
+  }
+
+  .contactInfo a {
+    font-size: 35pt;
+    text-align: center;
+    display: inline-block;
+  }
+  .contactsList img {
+    float: left;
+    width: 100px;
+  }
+  .contactOption {
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+  }
+}
+
+.hvr-underline-from-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  background: #d10000;
+  height: 4px;
+  -webkit-transition-property: left;
+  transition-property: left;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-right:hover:before,
+.hvr-underline-from-right:focus:before,
+.hvr-underline-from-right:active:before {
+  left: 0;
+}

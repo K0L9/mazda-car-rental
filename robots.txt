@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+host: mazdarental.com.ua/
+
+User-agent: *
+Disallow: /images/
+Dissalow: /css/
+Dissalow: /js/
+
+User-agent: Googlebot-Image
+Disallow: /images/
+
+Sitemap: http://www.mazdarental.com.ua/sitemap.xml
